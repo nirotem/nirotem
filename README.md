@@ -1,6 +1,6 @@
 # Dr. Nir Rotem - Personal Academic Website
 
-Welcome to the repository for the personal academic website of Dr. Nir Rotem, hosted via GitHub Pages and secured through Cloudflare at `nirotem.com`. 
+Welcome to the repository for the personal academic website of Dr. Nir Rotem, hosted via GitHub Pages and secured through Cloudflare at nirotem.com. 
 
 This site is built as a lightweight, lightning-fast static web environment. It is designed to showcase academic research, publications, teaching experience, and professional engagements without the bloated overhead or security vulnerabilities of a traditional Content Management System (CMS) like WordPress or Wix.
 
@@ -8,12 +8,12 @@ This site is built as a lightweight, lightning-fast static web environment. It i
 
 ## 🎨 Design Ethos & Architecture
 
-The website features a custom **Scandinavian Modern Academic Theme** characterized by minimalist aesthetics, a muted earth-toned palette, sophisticated typography (`Inter`), and generous whitespace to ensure maximum readability.
+The website features a custom Scandinavian Modern Academic Theme characterized by minimalist aesthetics, a muted earth-toned palette, sophisticated typography (Inter), and generous whitespace to ensure maximum readability.
 
 ### Key Technical Features:
-* **Grid Layout (1100px Desktop):** Optimized layout for modern desktop monitors, utilizing structural flexbox and grid splits to keep text and media perfectly aligned.
-* **Full Mobile Responsiveness:** Built natively with fluid CSS layout modifications and viewport constraints. It seamlessly adapts to mobile screens, scaling fonts, stacking cards, and adjusting navigation menus automatically without requiring separate mobile files.
-* **Secure and Proxied Architecture:** Operating on a decoupled infrastructure. The domain DNS and SSL handshakes are handled via Cloudflare (Full/Strict Encryption Mode) mapping directly to GitHub Pages' static edge servers over safe HTTPS protocols.
+* Grid Layout (1100px Desktop): Optimized layout for modern desktop monitors, utilizing structural flexbox and grid splits to keep text and media perfectly aligned.
+* Full Mobile Responsiveness: Built natively with fluid CSS layout modifications and viewport constraints. It seamlessly adapts to mobile screens, scaling fonts, stacking cards, and adjusting navigation menus automatically without requiring separate mobile files.
+* Secure and Proxied Architecture: Operating on a decoupled infrastructure. The domain DNS and SSL handshakes are handled via Cloudflare (Full/Strict Encryption Mode) mapping directly to GitHub Pages' static edge servers over safe HTTPS protocols.
 
 ---
 
@@ -21,12 +21,12 @@ The website features a custom **Scandinavian Modern Academic Theme** characteriz
 
 The core project consists of five foundational HTML pages, a centralized stylesheet, and an isolated asset folder:
 
-* **`index.html` (About Me):** The digital landing page. It introduces your core research paradigm at the intersection of transnational sociology and political sociology. It highlights your current status as a *David and Rosa Orzen Research Fellow*, presents your targeted research interests in a clean grid of styled UI boxes, and hosts your verified social buttons (Google Scholar, ORCID, HUJI).
-* **`projects.html` (Research):** A comprehensive catalog of your ongoing and completed research initiatives. Every research card uses a split text-and-graph layout to cleanly break down projects ranging from *Illiberalism, Higher Education, and Academic Freedom* to machine learning attrition studies.
-* **`publications.html` (Selected Publications):** Fully automated page hosting a secure async BibBase integration pipeline connected directly to your public Zotero collection database. Custom style overwrites are embedded in the master CSS to scrub out duplicate outbound icons for a cleaner look.
-* **`teaching.html` (Teaching & Engagement):** Displays a structured, chronological timeline of your pedagogical appointments at the Hebrew University of Jerusalem, University of Graz, and University of Minnesota. It also houses an elaborate, categorized overview of your professional memberships (ASA, ISS), peer-review pipelines, and selected awards.
-* **`lighter.html` (The Lighter Side):** A curated personal section featuring a customized, narrow landscape hero banner. It displays your personal interests (Expeditions, Film/Cinema, Reading) across a symmetric 4-box layout, alongside a Font-Awesome integrated Spotify badge linking to your profile.
-* **`style.css`:** The master engine for the site’s entire visual presentation, governing variables, structural media queries, spacing utilities, and responsive breakpoints.
+* index.html (About Me): The digital landing page. It introduces your core research paradigm at the intersection of transnational sociology and political sociology. It highlights your current status as a David and Rosa Orzen Research Fellow, presents your targeted research interests in a clean grid of styled UI boxes, and hosts your verified social buttons (Google Scholar, ORCID, HUJI).
+* projects.html (Research): A comprehensive catalog of your ongoing and completed research initiatives. Every research card uses a split text-and-graph layout to cleanly break down projects ranging from Illiberalism, Higher Education, and Academic Freedom to machine learning attrition studies.
+* publications.html (Selected Publications): Fully automated page hosting a secure async BibBase integration pipeline connected directly to your public Zotero collection database. Custom style overwrites are embedded in the master CSS to scrub out duplicate outbound icons for a cleaner look.
+* teaching.html (Teaching & Engagement): Displays a structured, chronological timeline of your pedagogical appointments at the Hebrew University of Jerusalem, University of Graz, and University of Minnesota. It also houses an elaborate, categorized overview of your professional memberships (ASA, ISS), peer-review pipelines, and selected awards.
+* lighter.html (The Lighter Side): A curated personal section featuring a customized, narrow landscape hero banner. It displays your personal interests (Expeditions, Film/Cinema, Reading) across a symmetric 4-box layout, alongside a Font-Awesome integrated Spotify badge linking to your profile.
+* style.css: The master engine for the site’s entire visual presentation, governing variables, structural media queries, spacing utilities, and responsive breakpoints.
 
 ---
 
@@ -36,11 +36,11 @@ Because this site is built with clean, static HTML components, you can add a bra
 
 ### Step-by-Step Guide:
 
-1. Log into GitHub, open this repository, select **`projects.html`**, and click the **pencil icon (Edit this file)** in the upper right.
-2. Scroll down until you find the comment line: ``.
+1. Log into GitHub, open this repository, select projects.html, and click the pencil icon (Edit this file) in the upper right.
+2. Scroll down until you find the comment line: .
 3. Right beneath that line (so it appears as the very first, most recent project), press Enter to create an empty space and paste the following blank structural template:
 
-```html
+=========================================
 <div class="project-card">
     <div class="project-text">
         <h4>Name of Your Brilliant New Project Here</h4>
@@ -50,3 +50,17 @@ Because this site is built with clean, static HTML components, you can add a bra
         <img src="images/project-new-name.jpg" alt="Brief Description of Image">
     </div>
 </div>
+=========================================
+
+4. Replace the placeholder title and description text with your actual content.
+5. Crop your new project graphic or chart to a standard horizontal ratio, name the file something simple (e.g., project-new-name.jpg), and upload it into the /images directory. Make sure the filename matches the src="..." attribute in your pasted code exactly.
+6. Scroll to the bottom of the page, click the green Commit changes button, and your live site will update automatically within 60 seconds.
+
+---
+
+## 🖼️ Media Asset Registry
+
+All system images reside inside the images/ directory. For clean formatting, guarantee the following naming configurations are intact:
+* profile.jpg - Your professional headshot for the landing page.
+* landscape.jpg - The wide landscape banner texturing the Lighter Side tab.
+* project-illiberalism.jpg / project-trust.jpg / project-computational.jpg / project-productivity.jpg / project-dropout.jpg / project-judicial.jpg / project-unhcr.jpg / project-others.jpg / project-women.jpg - The active image suite mapped to your academic project cards.
