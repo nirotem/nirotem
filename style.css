@@ -1,5 +1,5 @@
 
-/* --- Scandinavian Modern Academic Theme (Version 17) --- */
+/* --- Scandinavian Modern Academic Theme --- */
 :root {
     --bg-color: #fcfaf7;
     --text-color: #333333;
@@ -75,13 +75,16 @@ main { padding: 60px 0; }
 h2, h3 { color: var(--accent-color); font-weight: 400; }
 h2 { font-size: 2rem; margin-bottom: 35px; }
 
-/* Grid for About and Projects */
+/* About Page Layout */
 .about-grid { display: flex; gap: 60px; align-items: flex-start; }
 .profile-side { flex: 0 0 280px; text-align: center; }
 .profile-img { width: 100%; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+.profile-info { margin-top: 20px; }
+.profile-info .name { font-weight: 600; font-size: 1.25rem; margin: 0; }
+.profile-info .role { font-size: 1rem; color: #777; margin: 8px 0; line-height: 1.4; }
+
 .bio-content { flex: 1; }
 
-/* --- INTERESTS BOXES (The Fix) --- */
 .interests-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -93,13 +96,33 @@ h2 { font-size: 2rem; margin-bottom: 35px; }
     background: #fff;
     border: 1px solid var(--border-color);
     padding: 12px 18px;
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     text-align: center;
     color: var(--accent-color);
     border-radius: 2px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
 }
 
+.contact-box { margin-top: 50px; padding: 25px 0; border-top: 1px solid var(--border-color); }
+.social-btns { display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
+
+.btn {
+    text-decoration: none;
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.btn:hover { background-color: var(--accent-color); color: white; }
+
+.btn-spotify { border-color: #1DB954; color: #1DB954; }
+.btn-spotify:hover { background-color: #1DB954; color: white; border-color: #1DB954; }
+
+.project-intro { font-style: italic; color: #555; margin-bottom: 50px; border-left: 4px solid var(--accent-color); padding-left: 25px; font-size: 1.1rem; }
 .project-card {
     background: var(--card-bg);
     padding: 35px;
@@ -131,7 +154,7 @@ h2 { font-size: 2rem; margin-bottom: 35px; }
 
 .landscape-hero {
     width: 100%;
-    height: 250px; 
+    height: 250px;
     background-color: #eee;
     margin-bottom: 50px;
     overflow: hidden;
@@ -140,25 +163,15 @@ h2 { font-size: 2rem; margin-bottom: 35px; }
 .landscape-hero img { width: 100%; height: 100%; object-fit: cover; }
 
 .lighter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-.interest-card { background: white; padding: 30px; border: 1px solid var(--border-color); height: 100%; }
+.interest-card { background: white; padding: 30px; border: 1px solid var(--border-color); }
+.interest-card h4 { margin-top: 0; color: var(--nav-active); }
 
-/* Buttons */
-.btn {
-    text-decoration: none;
-    font-size: 0.85rem;
-    color: var(--accent-color);
-    border: 1px solid var(--accent-color);
-    padding: 8px 20px;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+#bibbase-container { font-size: 0.95rem; }
+.bibbase_paper { margin-bottom: 25px !important; }
+.bibbase_paper i.fa-external-link-alt, 
+.bibbase_paper a[title="Open"] { 
+    display: none !important; 
 }
-.btn:hover { background-color: var(--accent-color); color: white; }
-.btn-spotify { border-color: #1DB954; color: #1DB954; }
-.btn-spotify:hover { background-color: #1DB954; color: white; }
-
-.bibbase_paper a[title="Open"], .bibbase_paper i.fa-external-link-alt { display: none !important; }
 
 footer { padding: 80px 0; text-align: center; font-size: 0.85rem; color: #bbb; border-top: 1px solid var(--border-color); }
 
@@ -166,9 +179,11 @@ footer { padding: 80px 0; text-align: center; font-size: 0.85rem; color: #bbb; b
     .container { padding: 0 25px; }
     .about-grid, .project-card, .lighter-grid { flex-direction: column; display: block; }
     .profile-side { margin-bottom: 40px; width: 100%; }
+    .project-card { gap: 25px; }
     .project-image-box { width: 100%; max-width: 100%; height: auto; min-height: 200px; margin-top: 20px; }
     .interest-card { margin-bottom: 20px; }
     .landscape-hero { height: 180px; }
     header h1 { font-size: 1.8rem; }
+    nav ul { gap: 15px; }
     .interests-grid { grid-template-columns: 1fr 1fr; }
 }
